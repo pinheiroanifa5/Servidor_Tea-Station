@@ -1,0 +1,24 @@
+1. Implementar  Servidor para Conteudo Estatico.
+
+Para criar servidor estatico, pode-se usar a biblioteca express em node.js.
+Pimeiro, cria-se uma instancia de express.js e define a porta que será executada, depois o caminho
+para os caminhos estaticos q serão servidos pelo servidor.
+Após, criar um middleware para solicitar para solicitação 404 é recebida, o servidor responde como codigo
+de status 404 do arquivo 404.html localizada na pasta public, Por fim, o servidor é iniciado e começa as solicitações
+para portas especificas.
+
+ Ao executar este codigo, terá um servidor um servidor em execução na porta 3000, que serve arquivos estaticos
+da pasta public e lida com solicitações 404 envidado do arquivo 404.html.
+
+2.Implementar com o EJS a introdução de  conteúdos dinâmicos.
+Depois, de instalar e configurar as dependências necessarias, será renderizada o modelo de rotas
+com o método "res.render" e fornecer os dados dinâmicos Nos arquivos EJS, você pode acessar os dados dinâmicos
+ usando as tags <%= %> que correspondem às chaves no objeto passado para res.render. Por exemplo, no arquivo "index.ejs",
+ <%= title %> e <%= message %> serão substituídos pelos valores passados na rota.
+
+Por ultimo, o servidor deve ser iniciado com 'node server.js' e acessar a página no navegador com
+a rota correspondente, portanto, permitira ter uma pagina web dinâmica usando o EJS como mecanismo
+de visualização personalizado com o conteúdo da pagina tea station.
+
+
+ 
