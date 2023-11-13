@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs'); // Configure a engine de visualização EJS
-app.set('view', path.join(__dirname,'views'));
+app.set('view ', 'view');
 // Configurar o diretório de arquivos estáticos
 app.use(express.static(path.join(__dirname, 'public')));
 
